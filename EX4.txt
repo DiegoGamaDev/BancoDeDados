@@ -1,0 +1,17 @@
+// ----------------------------- EXERCICIO AUTOMOVEL
+Uma locadora de automóveis, mantém registro dos automóveis. Um automóvel é cadastrado com placa, modelo, ano, nome da montadora, site da montadora, logotipo da montadora.
+ 
+//------------------------------
+
+ CREATE TABLE AUTOMOVEL (
+PLACA VARCHAR(10),
+MODELO VARCHAR(50),
+ANO INT(4),
+NOMEMONTADORA VARCHAR(50),
+SITEMONTADORA VARCHAR(150),
+LOGOMONTADORA VARCHAR(150)
+
+);
+
+INSERT INTO AUTOMOVEL (PLACA,MODELO,ANO,NOMEMONTADORA,SITEMONTADORA,LOGOMONTADORA) VALUES ('GGY7689','JEEP COMPASS 2020 4X4 DIESEL TRAILHAWLK', '2020','JEEP.COM','LOGOJEEP.JPG');
+SELECT * FROM AUTOMOVEL;

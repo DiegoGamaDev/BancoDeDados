@@ -1,0 +1,34 @@
+// --------------------------------- EXERCICIO PROJETOS / DEVS 
+
+2 - Em uma produtora de games, há desenvolvedores, que possuem um nome, CPF, data de nascimento.
+
+Cada projeto tem um nome, data de lançamento, gênero e faixa etária. Segundo o gerente de projetos, “cada desenvolvedor deve estar envolvido em um projeto”.
+
+
+// -----------------------------------------------
+
+CREATE TABLE PROJETOS(
+
+NOME varchar(50),
+LANCAMENTO date,
+GENERO varchar(40),
+FAIXAETARIA varchar(2)
+);
+
+INSERT INTO PROJETOS (NOME,LANCAMENTO,GENERO,FAIXAETARIA) VALUES ('Dark Souls IV','2024/05/05','ACTION RPG', '18');
+
+SELECT * FROM PROJETOS;
+
+// -----------------------------------------------  
+
+
+CREATE TABLE DEVS(
+
+NOME varchar(80),
+CPF varchar(11),
+NASCIMENTO date
+);
+
+INSERT INTO DEVS (NOME,CPF,NASCIMENTO) VALUES ('Cesar Augusto','12345678910','2023-01-03');
+
+SELECT * FROM DEVS;

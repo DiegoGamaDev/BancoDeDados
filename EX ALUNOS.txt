@@ -1,0 +1,25 @@
+//    -    EXERCICIO ALUNOS
+
+1 — Crie um banco de dados para armazenar dados de alunos. Um aluno deve ter RA, nome, data de nascimento, endereço e e-mail;
+
+// ---------------------------
+
+
+
+CREATE TABLE ALUNO(
+
+RA INT(20),
+NOME VARCHAR(60),
+DATADENASCIMENTO VARCHAR(20),
+ENDERECO VARCHAR(90),
+EMAIL VARCHAR(70)
+
+);
+
+INSERT INTO ALUNO VALUES (123,'DIEGO SANTOS','30/05/1988','AV MARIO CAMPOLIM','diego@hotmail.com'); 
+INSERT INTO ALUNO VALUES (124,'THAIS SANTOS','01/06/1961','AV CARLOS CAMPOS','thais@hotmail.com'); 
+INSERT INTO ALUNO VALUES (125,'HELIO SANTOS','14/06/1961','AV MARIA INES','helio@hotmail.com'); 
+INSERT INTO ALUNO VALUES (126,'DANIELLA SOUSA','28/12/1992','AV CLEIDE ROSA','dani@hotmail.com'); 
+INSERT INTO ALUNO VALUES (127,'CESAR AUGUSTO','05/03/2000','AV SOPA DE CEBOLA','cesar@hotmail.com'); 
+
+SELECT * FROM ALUNO;

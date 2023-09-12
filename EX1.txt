@@ -1,0 +1,40 @@
+// ------------------------------------- EXERCICIO CLIENTES & PETS
+
+Crie um modelo de dados para os cenários a seguir:
+
+1 - Um petshop deseja manter cadastrados seus clientes bem como seus pets.
+
+Um cliente deve informar seu nome, CPF, e-mail e telefone, além do nome, espécie e data de nascimento de seu pet.
+
+
+
+
+// ---------------------------------------
+
+CREATE TABLE CLIENTES(
+
+NOME varchar(50),
+CPF varchar(11),
+EMAIL varchar(90),
+TEL varchar(30)
+);
+
+INSERT INTO CLIENTES (NOME,CPF,EMAIL,TEL) VALUES ('Diego Gama','12345678910','diego@hotmail.com', '1599994567');
+
+SELECT * FROM CLIENTES;
+
+
+
+// ---------------------------------------
+
+
+CREATE TABLE PETS(
+
+NOME varchar(80),
+ESPECIE varchar(60),
+NASCIMENTO date
+);
+
+INSERT INTO PETS (NOME,ESPECIE,NASCIMENTO) VALUES ('Cesar Augusto','SRD','2023/01/03');
+
+SELECT * FROM PETS;

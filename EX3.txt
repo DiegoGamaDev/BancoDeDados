@@ -1,0 +1,28 @@
+// ------------------------------- EXERCICIO AUTORES / LIVROS
+
+Uma biblioteca efetua registro de autores e livros. Um autor é cadastrado com seu nome, e-mail, nacionalidade e data de nascimento.
+ Já um livro é registrado com o título, quantidade de páginas, acabamento e editora.
+
+//---------------------------------------------------
+
+CREATE TABLE AUTORES (
+NOME VARCHAR(60),
+EMAIL VARCHAR(70),
+DATADENASCIMENTO DATE,
+NACIONALIDADE VARCHAR(50)
+);
+
+INSERT INTO AUTORES (NOME,EMAIL,DATADENASCIMENTO,NACIONALIDADE) VALUES ('Armando Pereira','armandop@gmail.com', '1960/05/10','BRASILEIRO');
+SELECT * FROM AUTORES;
+
+//---------------------------------------------------
+
+CREATE TABLE LIVROS(
+TITULO VARCHAR(80),
+QUANTIDADEPAGINAS INT(5),
+EDITORA VARCHAR(100),
+ACABAMENTO VARCHAR(100)
+);
+
+INSERT INTO LIVROS (TITULO,QUANTIDADEPAGINAS,EDITORA,ACABAMENTO) VALUES ('O SENHOR DOS ANEIS',390, 'SOUZA LIMA','CAPA DURA');
+SELECT * FROM LIVROS;
